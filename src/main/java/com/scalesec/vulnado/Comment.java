@@ -67,7 +67,7 @@ public class Comment {
       pStatement.setString(1, id);
       return 1 == pStatement.executeUpdate();
     } catch(Exception e) {
-      e.printStackTrace();
+      // Exception handled silently
     } finally {
       return false;
     }
